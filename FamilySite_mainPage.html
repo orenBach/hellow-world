@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<title>The family web site</title>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+<script type="text/javascript"> 
+function changeText() 
+{
+    var txt = document.getElementById("myText").value;
+
+    if (txt.length == 0)
+        alert("No value enterd !");
+    else 
+        document.getElementById("span1").innerHTML = document.getElementById("myText").value;
+}
+</script> 
+
+</head>
+<body> 
+
+<br/>
+<div><h1 id="h1_1"> The <span id="span1"> bach </span> family website </h1></div>
+<h3 id="h3_1">family name : <input type="text" id="myText" value="bach" onchange="changeText()"> </h3>
+<br/>
+
+<p>
+    <h1 id="h1_2"> Our Famuily : </h1>
+    <h3 id="h3_2"> In our site, you can find and read, all about our family </h3>
+    <br/>
+    <a href="names_table.html" id="href_1"><h3>Our family list</h3>></a>
+</p>
+<br/><br/>
+
+<audio controls autoplay loop id="audio_1"> 
+    <source src="C:\D\application web develop\family site html javaScript/rhtdm.mp3" type="audio/mpeg"> 
+    Your browser does not support the audio element ! 
+</audio> 
+
+</body> 
+</html>
